@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="380" viewBox="0 0 860 380" font-family="'Courier New', Courier, monospace">
+  <style>
+    .bob   { animation: bob 1.2s steps(2) infinite; }
+    .blink { animation: blink 1s steps(1) infinite; }
+    .star  { animation: twinkle 2.4s steps(2) infinite; }
+    .s2 { animation-delay: .6s } .s3 { animation-delay: 1.2s } .s4 { animation-delay: 1.8s }
+    .hp { animation: fillHp 1.6s ease-out forwards; }
+    .mp { animation: fillMp 1.6s .2s ease-out forwards; }
+    .xp { animation: fillXp 1.6s .4s ease-out forwards; }
+    .hp, .mp, .xp { width: 0; }
+    @keyframes bob   { 0%{transform:translateY(0)} 100%{transform:translateY(-4px)} }
+    @keyframes blink { 0%{opacity:1} 50%{opacity:0} }
+    @keyframes twinkle { 0%{opacity:.2} 50%{opacity:1} }
+    @keyframes fillHp { to { width: 232px } }
+    @keyframes fillMp { to { width: 200px } }
+    @keyframes fillXp { to { width: 168px } }
+    .glow { animation: glow 1.4s ease-in-out infinite alternate; }
+    .orb  { animation: orb 2s ease-in-out infinite alternate; }
+    .rise { animation: rise 3s linear infinite; }
+    .r2 { animation-delay: 1s } .r3 { animation-delay: 2s }
+    @keyframes glow { from { opacity: .65 } to { opacity: 1 } }
+    @keyframes orb  { from { transform: translateY(0) } to { transform: translateY(-6px) } }
+    @keyframes rise { 0% { transform: translateY(0); opacity: 0 } 20% { opacity: 1 } 100% { transform: translateY(-60px); opacity: 0 } }
+  </style>
+
+  <!-- background -->
+  <rect width="860" height="380" fill="#0d1117"/>
+  <rect x="6" y="6" width="848" height="368" fill="none" stroke="#b884e0" stroke-width="4"/>
+  <rect x="14" y="14" width="832" height="352" fill="none" stroke="#3a2a4f" stroke-width="2"/>
+
+  <!-- stars -->
+  <rect class="star"    x="60"  y="40"  width="4" height="4" fill="#fff"/>
+  <rect class="star s2" x="700" y="26"  width="4" height="4" fill="#fff"/>
+  <rect class="star s3" x="810" y="50"  width="4" height="4" fill="#fff"/>
+  <rect class="star s4" x="600" y="335" width="4" height="4" fill="#fff"/>
+  <rect class="star s2" x="30"  y="345" width="4" height="4" fill="#fff"/>
+  <rect class="star s3" x="790" y="320" width="4" height="4" fill="#fff"/>
+
+  <!-- title -->
+  <text x="430" y="44" text-anchor="middle" fill="#b884e0" font-size="18" font-weight="bold" letter-spacing="6">— CHARACTER SELECT —</text>
+
+  <!-- sprite panel: full-body fantasy hero, hand-drawn pixel art (40x58 grid, 4px cells) -->
+  <rect x="40" y="62" width="228" height="276" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <text x="154" y="84" text-anchor="middle" fill="#7d8590" font-size="12">P1</text>
+  <g class="blink" fill="#b884e0">
+    <rect x="52" y="94" width="16" height="4"/><rect x="52" y="94" width="4" height="16"/>
+    <rect x="240" y="94" width="16" height="4"/><rect x="252" y="94" width="4" height="16"/>
+    <rect x="52" y="322" width="16" height="4"/><rect x="52" y="310" width="4" height="16"/>
+    <rect x="240" y="322" width="16" height="4"/><rect x="252" y="310" width="4" height="16"/>
+  </g>
+  <rect x="94" y="318" width="120" height="8" fill="#0d1117" opacity=".7"/>
+  <g fill="#7ee8ff">
+    <rect class="rise"    x="96"  y="300" width="4" height="4"/>
+    <rect class="rise r2" x="210" y="290" width="4" height="4"/>
+    <rect class="rise r3" x="150" y="310" width="3" height="3"/>
+    <rect class="rise r2" x="226" y="200" width="3" height="3" fill="#b884e0"/>
+  </g>
+  <g class="bob">
+    <g transform="translate(74,92)">
+      <image x="0" y="0" width="160" height="232" style="image-rendering:pixelated" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA6CAYAAADC4Bv9AAADoUlEQVR42u2YX0hTURzHv7tOEpNhDCtEqAdhMpTBwAaGRbCxhyH1UIEYwoLwJcoSDISQXoKJlg8RhA8DIYLwQQrBsT2U4mgE4lDGBhOqh6FJZGPpbKU9zHM995+7/6ZD94Oxe36/c373c3/nd37n3AscNak3Ne7Umxp3xPT0v15iUAqXY9YAAJXbdQCAVDppIPrK7TqQf6JPpZOGAwPkQxJQus3X0w+iBpBROiCVThrITQGIwrVaLaw+x6whx6ypnnpGjzxptVo47c+xhEB3aFOsREhuHngEiylGrQ7mX/Xta7f3jGjyzxQTTm4fXesgWZnkxo4746w9MtYtqbP3jKgqOUYlcP67F2C1NXH0kbFuDhDfxo9kLBqH9wVkF3CjHolMQGLROKy2Jg6YVlGUg3P3XkvaYtF4UVaxqhzkRygWjSP6fYOjs52uFqQDSQUlOagogsTxm+A8R2+1NaHTZUftRha1G1l0uuwCODJGaaFWtYGTSPbebGZ1nS67KBAAjL5dUn1g0ARIhAalhYDxZ6AogDTUk+vcxTI40QV+CYpF4/i2cl/QTymsQS4cDTW7GEJ7i5Ntdww3IxfkbmmVrj70u0c5/eixgxNdsiAZrXAAkJ3xIGxys+2wyY3sjEcSjsyCnDOiokJNPz2Bnl0MAfABAKbhZnXpFp9gevmpoUuZSaWThsGJLhbOdAOcqSUR6RhuZuGGAr2cPvmHAGesblNMpL3FyULQQIXgyFha6LG6AUo5pfXn3w/g5Z9qyQegr50Wrz45WG9q3HFavLIe4vanK/mLS1Olc6KmpUpHsKP3TkIKcRuA8HgDsjMeQZ+BoRUAwNP+swJbeLwBFekAcsHArqZCO6BU/kVO+ET7X328a5fw17YVKF4EpwN7OwWpZ5cd8svFx8gSxwcQgtPiRSjh3/f4X/I5qBhQTfRIf3onOTKrmDmI6IlFkWx/hXYUo5wVTJw5th7tHq/UR8QBIAhfcXaS4Lu84+dTD/OH0nM1rO3nj1XUZE4CADI1v3HKfGavhn7NAAAeeJ4d8xwsGUCx/DuWEZSzkss5WAY87DxkSnkFl6f4+L00Kcm/axf/Afi1p2iowuRc/vKWrYpnAybnKrQDKpEvK+siWnNBm9RKnl0Uf0cp52BRAelPtvz2wrIZH5b+YmHZzP7WN1dZG99eyB8AhBJ++YCFnBEYtW0pOP6OIgoYSvg5Hxf5HxvXN1c1tfn+5H7MZEtNKbVLXv4DGWfgJ5R2yloAAAAASUVORK5CYII="/>
+      <g class="glow"><image x="0" y="0" width="160" height="232" style="image-rendering:pixelated" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA6CAYAAADC4Bv9AAAAgklEQVR42u3XMRWAMAxF0bYCEMDEwFYRIAEn9VE1TMzYYEMDOyeI4NCm4V0F7f/JEOcAAAAAAACKONdZVD+w70ahptb4N3M3LLtX85OYsly3yLQdElMuNovBxBzUSq+JBAP1/jrB2umxJObrpWLz9baZoKb0WBLz9VKx+XrtHE3Ahx4zMWs47S+AdwAAAABJRU5ErkJggg=="/></g>
+      <g class="orb glow"><image x="0" y="0" width="160" height="232" style="image-rendering:pixelated" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA6CAYAAADC4Bv9AAAAeElEQVR42u3TsQmAMBCF4Siu4BSO4yA2KthkALHJcO4QsLOXs4okkNRn4P+aO9LkcccZAwAAAAAoajQ/H6ZdQn+6NZul0ww3bkv8JKWQKuGsF7Fe5H7k6+OJBq1m0LlPa45qwONK66/Eay6tt4orBgAAAAAAAOr1Alw6NoBB4C1vAAAAAElFTkSuQmCC"/></g>
+    </g>
+  </g>
+
+  <!-- info -->
+  <text x="300" y="122"  fill="#f0f6fc" font-size="30" font-weight="bold">BUĞRA DOĞAN</text>
+  <text x="300" y="148" fill="#7d8590" font-size="15">@zhao12yan · LV.3 Computer Engineer</text>
+  <text x="300" y="174" fill="#3fb950" font-size="14">CLASS: Defense-Tech Engineer / ML Ranger</text>
+  <text x="300" y="194" fill="#d29922" font-size="14">GUILD: Batman Üniversitesi · TR</text>
+
+  <!-- bars -->
+  <g font-size="13" font-weight="bold">
+    <text x="300" y="230" fill="#f85149">HP</text>
+    <rect x="332" y="219" width="240" height="14" fill="#21262d" stroke="#30363d"/>
+    <rect class="hp" x="336" y="223" height="6" fill="#f85149"/>
+    <text x="584" y="230" fill="#7d8590">Coffee 97%</text>
+
+    <text x="300" y="254" fill="#58a6ff">MP</text>
+    <rect x="332" y="243" width="240" height="14" fill="#21262d" stroke="#30363d"/>
+    <rect class="mp" x="336" y="247" height="6" fill="#58a6ff"/>
+    <text x="584" y="254" fill="#7d8590">Focus 84%</text>
+
+    <text x="300" y="278" fill="#3fb950">XP</text>
+    <rect x="332" y="267" width="240" height="14" fill="#21262d" stroke="#30363d"/>
+    <rect class="xp" x="336" y="271" height="6" fill="#3fb950"/>
+    <text x="584" y="278" fill="#7d8590">→ LV.4 (Graduation)</text>
+  </g>
+
+  <!-- press start -->
+  <text class="blink" x="566" y="318" text-anchor="middle" fill="#f0f6fc" font-size="15" letter-spacing="4">▶ PRESS START TO VIEW QUESTS</text>
+</svg>
