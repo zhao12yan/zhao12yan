@@ -59,8 +59,6 @@
 
 | Durum | Görev | Açıklama | Ödül (Stack) |
 |:---:|---|---|---|
-| ⚔️ **AKTİF** | **BitkilenAI** — *Bitirme Projesi* | Bitki hastalığı tespit uygulaması | MobileNetV2 · OpenCV · Streamlit |
-| ⚔️ **AKTİF** | **xView Object Detection** | Hava görüntülerinde küçük nesne tespiti (SAHI) | YOLO11 · Python |
 | ⚔️ **AKTİF** | **BelediyeBaşvuru** — *👑 Takım Lideri* | Vatandaş şikâyet portalı (5 kişilik ekip) | ASP.NET Core MVC |
 | ✅ TAMAMLANDI | [**olist-churn-prediction**](https://github.com/zhao12yan/olist-churn-prediction) | Churn tahmini ve tavsiye sistemi | Jupyter · ML |
 | ✅ TAMAMLANDI | [**tirfilo**](https://github.com/zhao12yan/tirfilo) | Tır & filo yönetim platformu | JavaScript |
