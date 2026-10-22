@@ -74,7 +74,6 @@
 | 🤖 **Robot Savaşçısı** | TEKNOFEST robotik deneyimi |
 | 💡 **Knight Rider** | PIC16F877A Assembly ile LED efekti |
 | 👑 **Parti Lideri** | 5 kişilik yazılım ekibine liderlik |
-| 🎓 **Final Boss Hazırlığı** | Bitirme projesi seçildi: BitkilenAI |
 
 ---
 
